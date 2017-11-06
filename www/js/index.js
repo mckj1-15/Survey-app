@@ -8,7 +8,10 @@ $(document).on("pagecreate","#pageone",function(){
 function submitText() {
 	var text = $('#textinput').val();
 	alert(text);
+	document.Survey-app.submit();
+        document.Survey-app.reset();
 	storeValue("text", text)
+	
 }
 
 function storeValue(key, value) {
